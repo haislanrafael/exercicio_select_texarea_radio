@@ -10,32 +10,32 @@
     <h1>Pagina de destino ao seu curso</h1>
     
     <form action="">
-    <label for="titulo">Titulo do curso:</label>
-        <input type="text" name="titulo" id="titulo">
+    <div>
+        <label for="titulo">Titulo do curso:</label>
+            <input type="text" name="titulo" id="titulo" required > <!--required serve para avisar o usuario pra preencher os campos -->
+    </div>
+    <div>
+        <p>Descrição do Curso:</p>
+    </div>
 
-    <p>Descrição do Curso:</p>
-    <textarea name="descricao" id="" rows="15"></textarea>
-    <br>
-    
-    <label for="selecione">qual seu nivel:</label>
-    <select name="seletor" id="selecione">selecione
-        <option value="">iniciante</option>
-        <option value="">medio</option>
-        <option value="">avançado </option>
-    </select>
-    <br>
-    <br>
-    <label for="curso">deseja adquirir esse curso? </label>
-    <br>
-    <br>
-    <label for="">sim</label>
-    <input type="radio" value="curso" id="curso">
+    <textarea name="descricao" id="" rows="15" cols="30"></textarea>
+    <div>
+        <label for="selecione">qual seu nivel:</label>
+        <select name="seletor" id="selecione">selecione
+            <option value="">iniciante</option>
+            <option value="">medio</option>
+            <option value="">avançado </option>
+        </select>
+    </div>
+    <div>
+        <label for="curso">deseja adquirir esse curso? </label>
+        <input type="checkbox">
+        <div>
+            <button id="curso">escrever</button>
+        </div>
+        
 
-    <label for="">não</label>
-    <input type="radio" value="curso" id="curso">
-    <button id="curso">escrever</button>
-
-
+    <div>
     </form>
 </body>
 </html>
